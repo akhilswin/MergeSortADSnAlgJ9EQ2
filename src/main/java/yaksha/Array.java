@@ -2,32 +2,32 @@ package yaksha;
 
 public class Array {
 
-	private int arr[];
+	private int array[];
 	private int beg;
 	private int mid;
 	private int end;
 
-	public Array(int[] arr, int beg, int mid, int end) {
+	public Array(int[] array, int beg, int mid, int end) {
 		super();
-		this.arr = arr;
+		this.array = array;
 		this.beg = beg;
 		this.mid = mid;
 		this.end = end;
 	}
 
-	public Array(int[] arr, int beg, int end) {
+	public Array(int[] array, int beg, int end) {
 		super();
-		this.arr = arr;
+		this.array = array;
 		this.beg = beg;
 		this.end = end;
 	}
 
-	public int[] getArr() {
-		return arr;
+	public int[] getArray() {
+		return array;
 	}
 
-	public void setArr(int[] arr) {
-		this.arr = arr;
+	public void setArray(int[] array) {
+		this.array = array;
 	}
 
 	public int getBeg() {
