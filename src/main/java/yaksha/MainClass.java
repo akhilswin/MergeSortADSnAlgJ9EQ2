@@ -1,14 +1,28 @@
 package yaksha;
 
+import java.util.Scanner;
+
 public class MainClass {
 	public static void main(String args[]) {
-		int arr[] = { 90, 23, 101, 45, 65, 23, 67, 89, 34, 23 };
+		int i;
+		Scanner scanner = new Scanner(System.in);
+		int[] array;
+		int sizeOfArray;
+		System.out.println("Enter size of the Array :");
+		sizeOfArray = scanner.nextInt();
+		array = new int[sizeOfArray];
+		System.out.println("Enter numbers :");
+		for (i = 0; i < array.length; i++) {
+			array[i] = scanner.nextInt();
+		}
 		MergeSort ob = new MergeSort();
-		int result[] = ob.mergeSort(arr, 0, arr.length - 1);
+		Array array1 = new Array(array, 0, array.length - 1);
+		int result[] = ob.mergeSort(array1);
 
 		System.out.println("\nSorted array");
-		for (int i = 0; i < arr.length; i++) {
+		for (i = 0; i < array.length; i++) {
 			System.out.println(result[i] + "");
 		}
+		scanner.close();
 	}
 }
