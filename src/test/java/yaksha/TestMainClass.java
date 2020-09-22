@@ -26,10 +26,10 @@ public class TestMainClass {
 	@Test
 	void testMergeSort() throws Exception {
 		MergeSort mergeSort1 = new MergeSort();
-		Integer expectedResult[] = { 213, 213, 213, 314, 415, 615, 617, 819, 910, 1101 };
+		Integer expectedResult[] = { 213, 219, 415, 615, 617, 819, 910, 1101 };
 		List<Integer> expectedResultList = Arrays.asList(expectedResult);
-		int[] array = { 910, 213, 1101, 415, 615, 213, 617, 819, 314, 213 };
-		// 910 213 1101 415 615 213 617 819 314 213
+		int[] array = { 910, 213, 1101, 415, 615, 219, 617, 819 };
+		// 910 213 1101 415 615 219 617 819
 		Array array1 = new Array(array, 0, array.length - 1);
 		int result[] = mergeSort1.mergeSort(array1);
 		List<Integer> resultList = new ArrayList<Integer>(result.length);
